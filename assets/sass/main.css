@@ -284,6 +284,26 @@ body {
   margin-top: 4rem;
   margin-bottom: 8rem;
 }
+.attendanceList_top {
+  display: flex;
+  justify-content: space-between;
+}
+.attendanceList_station {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #1E202F;
+  display: flex;
+}
+.attendanceList_local {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #1A204E;
+  margin-left: 8px;
+}
 .attendanceList_filter select.form-control {
   display: inline;
   width: 200px;

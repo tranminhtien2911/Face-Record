@@ -43,6 +43,20 @@
     padding: 22px;
     margin-top: 4rem;
     margin-bottom: 8rem;
+    &_top{
+        display: flex;
+        justify-content: space-between;
+    }
+    &_station{
+        @include font(regular, 14);
+        color: $neutal-2;
+        display: flex;
+    }
+    &_local{
+        @include font(bold, 14);
+        color: $neutal-19;
+        margin-left: 8px;
+    }
     &_filter{
         select.form-control{
             display: inline;
