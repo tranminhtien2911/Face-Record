@@ -1,0 +1,11 @@
+.copyRight {
+    width: 100%;
+    padding: 14px 0;
+    background-color: $neutal-19;
+    text-align: center;
+
+    span {
+        @include font(bold, 14);
+        color: $neutal-18;
+    }
+}

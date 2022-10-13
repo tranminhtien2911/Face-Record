@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="assets/img/Logo.svg" /> -->
+    <title>Face Record</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./vendors/DataTables/datatables.css">
+    <link rel="stylesheet" href="./vendors/awesome-fonts/css/all.css">
+    <link rel="stylesheet" href="./vendors/uicons/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet" href="./vendors/uicons/css/uicons-solid-rounded.css" />
+    <link rel="stylesheet" href="./vendors/uicons/css/uicons-bold-rounded.css" />
+    <link rel="stylesheet" href="./assets/css/font-style.css">
+    <link rel="stylesheet" href="./assets/sass/main.css">
+
+    <!-- JS -->
+    <script src="./vendors/js/jquery-3.6.1.min.js" type="text/javascript"></script>
+    <script src="./vendors/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./vendors/DataTables/datatables.js" type="text/javascript"></script>
+    <script src="./assets/js/main.js" type="text/javascript"></script>
+
+
+</head>
+
+<body>
+    <!-- |-Navbar-| -->
+
+    <div class="topNav">
+        <div class="topNav_wrapper">
+            <a class="topNav_logo" href="#Logo">
+                <img class="topNav_img" src="./assets/img/logo-header.svg" alt="CSE - Hệ thống điểm danh tự động">
+            </a>
+            <div class="topNav_item">
+                <a class="topNav_link" href="./attendance.html">Attendance</a>
+                <a class="topNav_link active-topNav" href="./register.html">Register</a>
+            </div>
+        </div>
+    </div>
+    <!-- |-End Navbar-| -->
+    <div class="container main-padding main-margin">
+        <div class="row">
+            <!-- |-Camera Area-|-->
+            <div class="cameraArea">
+                <div class="cameraArea_content">
+                </div>
+            </div>
+            <!--|-End Camera Area-| -->
+            <!-- |-Register Form-| -->
+            <div class="register">
+                <h1 class="register_header title-large">Registration</h1>
+                <form action="#" method="post" class="register_form" name="register_form">
+                    <div class="register_form-left">
+                        <div class="register_form-head">
+                            <span>1</span>
+                            <span>User Avatar</span>
+                        </div>
+                        <div class="register_form-bodyAvatar">
+                            <div class="register_form-img">
+                                <img src="./assets/img/non-image.svg" alt="non image user">
+                            </div>
+                            <a href="#Capture" class="register_form-capture">
+                                <span><i class="fi fi-rr-camera"></i></span>
+                                <span>Capture Picture</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="register_form-right">
+                        <div class="register_form-head">
+                            <span>2</span>
+                            <span>User Information</span>
+                        </div>
+                        <div class="register_form-bodyInformation">
+                            <div class="register_form-input">
+                                <!-- Fill ID USER -->
+                                <div class="register_form-input-wrap">
+                                    <label for="register_form-input-id">Staff ID number</label>
+                                    <input type="text" class="register_form-input-id input-register"
+                                        id="register_form-input-id" placeholder="User ID" required>
+                                    <div class="feedback"></div>
+                                </div>
+
+                                <!-- Fill USER NAME -->
+                                <div class="register_form-input-wrap">
+                                    <label for="register_form-input-name">Full name of Staff</label>
+                                    <input type="text" class="register_form-input-name input-register"
+                                        id="register_form-input-name" placeholder="User Name" required>
+                                    <div class="feedback"></div>
+                                </div>
+
+                                <!-- Fill ORGANIZATION-->
+                                <div class="register_form-input-wrap">
+                                    <label for="register_form-input-organization">Organization</label>
+                                    <input type="text" class="register_form-input-organization input-register"
+                                        id="register_form-input-organization" placeholder="User Organization" required>
+                                    <div class="feedback"></div>
+                                </div>
+                                <!-- BUTTON REGISTER -->
+                                <div class="register_form-input-wrap">
+                                    <button type="submit" class="register_form-button">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- |-End Register Form-| -->
+            <!-- |-List Of User-| -->
+            <div class="listUser">
+                <h1 class="listUser_header title-large">List of user</h1>
+                <table class="listUser_table" id="listUser_table">
+                    <thead>
+                        <th>NO.</th>
+                        <th>Time</th>
+                        <th>Staff ID</th>
+                        <th>Fullname</th>
+                        <th>Avatar</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>09/23/2022 15:59:03</td>
+                            <td>POS12</td>
+                            <td>Trần Hồng Vịnh</td>
+                            <td><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                                    alt="User Avatar"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>09/23/2022 15:59:03</td>
+                            <td>POS13</td>
+                            <td>Lý Xuân Vy</td>
+                            <td><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="User Avatar"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>09/23/2022 9:10:20</td>
+                            <td>POS16</td>
+                            <td>Hồ Mạc Lân</td>
+                            <td><img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    alt="User Avatar"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>09/22/2022 13:14:50</td>
+                            <td>POS10</td>
+                            <td>Nguyễn Kiều Hạnh</td>
+                            <td><img src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                                    alt="User Avatar"></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>09/21/2022 16:15:10</td>
+                            <td>POS08</td>
+                            <td>Mạc Kỳ Phong</td>
+                            <td><img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                                    alt="User Avatar"></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>09/20/2022 8:10:09</td>
+                            <td>POS06</td>
+                            <td>Trần Dĩ Đồng</td>
+                            <td><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="User Avatar"></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>09/20/2022 7:20:40</td>
+                            <td>POS15</td>
+                            <td>Nguyễn Trần Mạnh Dũng</td>
+                            <td><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="User Avatar"></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>09/18/2022 7:24:40</td>
+                            <td>POS07</td>
+                            <td>Mạc Phạm Gia Hân</td>
+                            <td><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                                    alt="User Avatar"></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>09/18/2022 7:05:50</td>
+                            <td>POS02</td>
+                            <td>Phan Thái Vũ</td>
+                            <td><img src="https://images.unsplash.com/photo-1595956553066-fe24a8c33395?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                                    alt="User Avatar"></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>09/23/2022 15:59:03</td>
+                            <td>POS03</td>
+                            <td>Võ Minh Trang</td>
+                            <td><img src="https://images.unsplash.com/photo-1549351512-c5e12b11e283?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                                    alt="User Avatar"></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>09/23/2022 15:59:03</td>
+                            <td>POS12</td>
+                            <td>Trần Hồng Vịnh</td>
+                            <td><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                                    alt="User Avatar"></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>09/23/2022 15:59:03</td>
+                            <td>POS13</td>
+                            <td>Lý Xuân Vy</td>
+                            <td><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="User Avatar"></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>09/23/2022 9:10:20</td>
+                            <td>POS16</td>
+                            <td>Hồ Mạc Lân</td>
+                            <td><img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    alt="User Avatar"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- |-End List Of User-| -->
+        </div>
+    </div>
+    <!-- |-Copy Right-| -->
+    <div class="copyRight">
+        <span>Copyright © 2022 Duy Tan University</span>
+    </div>
+    <!-- |-End Copy Right-| -->
+
+</body>
+
+</html>

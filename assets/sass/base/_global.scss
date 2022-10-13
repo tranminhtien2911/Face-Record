@@ -1,0 +1,173 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* using rem unit */
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: $font-Nunito;
+  font-size: $font-size;
+  color: $neutal-2;
+}
+
+.main-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.cameraArea {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0 4rem 0;
+
+  &_content {
+    width: 48rem;
+    height: 36rem;
+    background-color: $neutal-15;
+  }
+}
+.title-large {
+  @include font(bold, 32);
+  color: $brand;
+  padding-bottom: 1.6rem;
+  margin-bottom: 0;
+}
+//Custome DataTables
+.dataTables {
+  &_wrapper {
+      @include font(regular, 16);
+      color: $neutal-2;
+
+      .row {
+          align-items: center;
+          &:first-child{
+            div{
+              &:last-child{
+                display: flex;
+                gap: 8px;
+                margin-left: auto;
+                .attendanceList_filter{
+                  position: relative;
+                  width: 100%;
+                }
+                select, option{
+                  @include font(regular, 14);
+                }
+                select{
+                  width: 100%;
+                  position: relative;  
+                  margin-left: 0;
+                  z-index: 0;
+                  
+                }
+                .attendanceList_filter-icon{
+                  position: absolute;
+                  top: 20%;
+                  right: 10px;
+                  i{
+                    @include font(regular, 16);
+                    height: 16px;
+                  }
+                }
+              }
+            }
+          }
+          &:last-child {
+              margin-top: 2rem;
+          }
+      }
+  }
+
+  &_length,
+  &_filter {
+      label {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+      }
+
+      select,
+      input {
+          @include font(regular, 16);
+      }
+  }
+
+  &_filter {
+      float: right;
+  }
+
+  &_info {
+      padding-top: 0 !important;
+  }
+}
+
+#listUser_table_previous>a,
+#listUser_table_next>a,
+#attendanceList_table_previous>a,
+#attendanceList_table_next>a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+
+  i {
+    font-size: 14px;
+    height: 18px;
+    display: inline-block;
+  }
+}
+
+.page-item.disabled .page-link {
+  color: $neutal-2;
+}
+
+.page-item.active .page-link {
+  background-color: $brand;
+  border-color: $brand;
+}
+
+.page-link {
+  color: $neutal-2;
+}
+
+//End Custome DataTables

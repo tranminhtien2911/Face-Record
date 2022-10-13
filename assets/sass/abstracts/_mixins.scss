@@ -1,0 +1,64 @@
+// $fontWeight: thin ,light, regular, medium, semibold, extrabold, black;
+// font($fontWeight: string, $fontSize: number)
+// font(regular, 16)
+@mixin font($fontWeight, $fontSize){
+    @if $fontWeight == 'thin' or $fontWeight == 100{
+        font-family: $font-Nunito;
+        font-size: #{$fontSize+'px'};
+        line-height: #{$fontSize+8+'px'};
+        font-weight: 100;
+    }
+    @if $fontWeight == 'light' or $fontWeight == 300{
+        font-family: $font-Nunito;
+        font-size: #{$fontSize+'px'};
+        line-height: #{$fontSize+8+'px'};
+        font-weight: 300;
+    }
+    @else if $fontWeight == 'regular' or $fontWeight == 400{
+        font-family: $font-Nunito;
+        font-size: #{$fontSize+'px'};
+        line-height: #{$fontSize+8+'px'};
+        font-weight: 400;
+    }
+    @else if $fontWeight == 'medium' or $fontWeight == 500{
+        font-family: $font-Nunito;
+        font-size: #{$fontSize+'px'};
+        line-height: #{$fontSize+8+'px'};
+        font-weight: 500;
+    }
+    @else if $fontWeight == 'semibold'or $fontWeight == 600{
+        font-family: $font-Nunito;
+        font-size: #{$fontSize+'px'};
+        line-height: #{$fontSize+8+'px'};
+        font-weight: 600;
+    }
+    @else if $fontWeight == 'bold'or $fontWeight == 700{
+        font-family: $font-Nunito;
+        font-size: #{$fontSize+'px'};
+        line-height: #{$fontSize+8+'px'};
+        font-weight: 700;
+    }
+    @else if $fontWeight == 'extrabold'or $fontWeight == 800{
+        font-family: $font-Nunito;
+        font-size: #{$fontSize+'px'};
+        line-height: #{$fontSize+8+'px'};
+        font-weight: 800;
+    }
+    @else if $fontWeight == 'black'or $fontWeight == 900{
+        font-family: $font-Nunito;
+        font-size: #{$fontSize+'px'};
+        line-height: #{$fontSize+8+'px'};
+        font-weight: 900;
+    }
+  }
+  // Chỉ điều chỉnh font size và line-height
+  @mixin sizeLine($fontSize) {
+    font-size: #{$fontSize+'px'};
+    line-height: #{$fontSize+8+'px'};
+  }
+  
+  // Làm cho chiều rộng và chiều cao bằng nhau
+  @mixin sameSize($width, $height: $width) {
+    width: $width;
+    height: $height;
+  }
