@@ -213,12 +213,14 @@ body {
   padding-left: 3.2rem;
   gap: 2.4rem;
 }
-.topNav_link {
+.topNav_link, .topNav_logout {
   position: relative;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+}
+.topNav_link {
   text-transform: uppercase;
   color: #B3B3B3;
   opacity: 0.6;
@@ -227,6 +229,19 @@ body {
 .topNav_link:hover {
   color: #fff;
   opacity: 1;
+}
+.topNav_logout {
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10rem;
+  padding: 0.8rem 1.8rem;
+  margin-left: auto;
+  margin-right: 32px;
+  transition: all 0.25s ease-in-out;
+}
+.topNav_logout:hover {
+  background-color: #fff;
+  color: #1A204E;
 }
 
 .active-topNav {
@@ -310,13 +325,19 @@ body {
   color: #1E202F;
   display: flex;
 }
+.attendanceList_station img {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-left: 8px;
+  transform: translateY(-4px);
+}
 .attendanceList_local {
   font-family: "Nunito", sans-serif;
   font-size: 14px;
   line-height: 22px;
   font-weight: 700;
   color: #1A204E;
-  margin-left: 8px;
+  margin-left: 2px;
 }
 .attendanceList_filter select.form-control {
   display: inline;
@@ -501,7 +522,7 @@ body {
   transition: 0.2s all;
 }
 .register_form-button:first-child:active, .register_form-button:last-child:active {
-  transform: scale(0.98);
+  transform: scale(1);
 }
 .register_form-button:first-child {
   border: none;
