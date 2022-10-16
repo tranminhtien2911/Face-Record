@@ -64,14 +64,14 @@ $(document).ready(function () {
     //End Custome Linking Page
     //Login
     $('.formLogin').on("submit", (e) => {
-        if(handle_Login_input()){
+        if (handle_Login_input()) {
             e.currentTarget.submit();
-        }else{
+        } else {
             e.preventDefault();
         }
-        
+
         // handle_Login_input();
-        
+
         // e.currentTarget.submit();
     });
     function handle_Login_input() {
@@ -87,12 +87,12 @@ $(document).ready(function () {
             $('.feedback-username').css("color", "#CB7377");
             valid_1 = false;
 
-        } else if (username_Value.length < 3 || username_Value.length > 18){
+        } else if (username_Value.length < 3 || username_Value.length > 18) {
             $('.formLogin_input-username').addClass('error');
             $('.feedback-username').html(`Username must be between 3 and 18 characters.`);
             $('.feedback-username').css("color", "#CB7377");
             valid_1 = false;
-        }else{
+        } else {
             $('.formLogin_input-username').removeClass('error');
             $('.feedback-username').html('');
             valid_1 = true;
@@ -104,19 +104,19 @@ $(document).ready(function () {
             $('.feedback-password').css("color", "#CB7377");
             valid_2 = false;
 
-        } else if (user_password_Value.length < 5 || user_password_Value.length > 18){
+        } else if (user_password_Value.length < 5 || user_password_Value.length > 18) {
             $('.formLogin_input-password').addClass('error');
             $('.feedback-password').html('Password must be between 5 and 18 characters.');
             $('.feedback-password').css("color", "#CB7377");
             valid_2 = false;
-        }else{
+        } else {
             $('.formLogin_input-password').removeClass('error');
             $('.feedback-password').html('');
             valid_2 = true;
         }
-        if(valid_1 == false || valid_2 == false){
+        if (valid_1 == false || valid_2 == false) {
             valid = false;
-        }else{
+        } else {
             valid = true;
         }
         return valid;
