@@ -38,7 +38,7 @@
             </a>
             <div class="topNav_item">
                 <a class="topNav_link" href="./attendance.html">Attendance</a>
-                <a class="topNav_link active-topNav" href="./register.html">Register</a>
+                <a class="topNav_link" href="./register.html">Register</a>
             </div>
         </div>
     </div>
@@ -48,6 +48,9 @@
             <!-- |-Camera Area-|-->
             <div class="cameraArea">
                 <div class="cameraArea_content">
+                    <video width="100%" height="100%" controls>
+                        <source src="./assets/img/Logo Intro and sound.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
             <!--|-End Camera Area-| -->
@@ -103,6 +106,7 @@
                                 <!-- BUTTON REGISTER -->
                                 <div class="register_form-input-wrap">
                                     <button type="submit" class="register_form-button">Register</button>
+                                    <button type="reset" class="register_form-button">Reset</button>
                                 </div>
                             </div>
                         </div>
@@ -115,11 +119,14 @@
                 <h1 class="listUser_header title-large">List of user</h1>
                 <table class="listUser_table" id="listUser_table">
                     <thead>
-                        <th>NO.</th>
-                        <th>Time</th>
-                        <th>Staff ID</th>
-                        <th>Fullname</th>
-                        <th>Avatar</th>
+                        <tr>
+                            <th>NO.</th>
+                            <th>Time</th>
+                            <th>Staff ID</th>
+                            <th>Fullname</th>
+                            <th>Avatar</th>
+                        </tr>
+
                     </thead>
                     <tbody>
                         <tr>
@@ -237,7 +244,6 @@
         <span>Copyright © 2022 Duy Tan University</span>
     </div>
     <!-- |-End Copy Right-| -->
-
 </body>
 
 </html>

@@ -64,81 +64,100 @@ body {
   &_content {
     width: 48rem;
     height: 36rem;
-    background-color: $neutal-15;
+
+    video {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
+
 .title-large {
   @include font(bold, 32);
   color: $brand;
   padding-bottom: 1.6rem;
   margin-bottom: 0;
 }
+.feedback {
+  @include font(regular, 12);
+  position: absolute;
+  top: 86px;
+  left: 16px;
+}
 //Custome DataTables
 .dataTables {
   &_wrapper {
-      @include font(regular, 16);
-      color: $neutal-2;
+    @include font(regular, 16);
+    color: $neutal-2;
 
-      .row {
-          align-items: center;
-          &:first-child{
-            div{
-              &:last-child{
-                display: flex;
-                gap: 8px;
-                margin-left: auto;
-                .attendanceList_filter{
-                  position: relative;
-                  width: 100%;
-                }
-                select, option{
-                  @include font(regular, 14);
-                }
-                select{
-                  width: 100%;
-                  position: relative;  
-                  margin-left: 0;
-                  z-index: 0;
-                  
-                }
-                .attendanceList_filter-icon{
-                  position: absolute;
-                  top: 20%;
-                  right: 10px;
-                  i{
-                    @include font(regular, 16);
-                    height: 16px;
-                  }
-                }
+    .row {
+      align-items: center;
+
+      &:first-child {
+        div {
+          &:last-child {
+            display: flex;
+            gap: 8px;
+            margin-left: auto;
+
+            .attendanceList_filter {
+              position: relative;
+              width: 100%;
+            }
+
+            select,
+            option {
+              @include font(regular, 14);
+            }
+
+            select {
+              width: 100%;
+              position: relative;
+              margin-left: 0;
+              z-index: 0;
+
+            }
+
+            .attendanceList_filter-icon {
+              position: absolute;
+              top: 20%;
+              right: 10px;
+
+              i {
+                @include font(regular, 16);
+                height: 16px;
               }
             }
           }
-          &:last-child {
-              margin-top: 2rem;
-          }
+        }
       }
+
+      &:last-child {
+        margin-top: 2rem;
+      }
+    }
   }
 
   &_length,
   &_filter {
-      label {
-          display: flex;
-          align-items: center;
-          gap: 4px;
-      }
+    label {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
 
-      select,
-      input {
-          @include font(regular, 16);
-      }
+    select,
+    input {
+      @include font(regular, 16);
+    }
   }
 
   &_filter {
-      float: right;
+    float: right;
   }
 
   &_info {
-      padding-top: 0 !important;
+    padding-top: 0 !important;
   }
 }
 
