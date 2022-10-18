@@ -188,6 +188,11 @@ body {
   color: #1E202F;
 }
 
+.scale-in-hor-left {
+  -webkit-animation: scale-in-hor-left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-hor-left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 .topNav {
   background-color: #F3F3F3;
   margin-left: auto;
@@ -231,17 +236,14 @@ body {
   opacity: 1;
 }
 .topNav_logout {
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 10rem;
-  padding: 0.8rem 1.8rem;
   margin-left: auto;
   margin-right: 32px;
-  transition: all 0.25s ease-in-out;
 }
-.topNav_logout:hover {
-  background-color: #fff;
-  color: #1A204E;
+.topNav_logout i {
+  font-size: 2.4rem;
+  height: 2.4rem;
+  display: block;
+  color: #fff;
 }
 
 .active-topNav {
@@ -249,6 +251,38 @@ body {
   opacity: 1;
 }
 
+@-webkit-keyframes scale-in-hor-left {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-left {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}
 .copyRight {
   width: 100%;
   padding: 14px 0;
@@ -326,8 +360,8 @@ body {
   display: flex;
 }
 .attendanceList_station img {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.8rem;
+  height: 2.8rem;
   margin-left: 8px;
   transform: translateY(-4px);
 }
@@ -405,7 +439,13 @@ body {
   -webkit-appearance: none;
 }
 
+.row {
+  justify-content: center;
+}
+
 .register {
+  max-width: 960px;
+  min-height: 566px;
   box-shadow: 0px 8px 20px rgba(121, 121, 121, 0.1), 0px -8px 20px rgba(121, 121, 121, 0.1);
   border-radius: 2rem;
   padding: 2rem;
@@ -537,6 +577,7 @@ body {
 }
 
 .listUser {
+  max-width: 960px;
   background-color: #fff;
   border-radius: 2rem;
   box-shadow: 0px 8px 20px rgba(121, 121, 121, 0.1), 0px -8px 20px rgba(121, 121, 121, 0.1);

@@ -1,18 +1,16 @@
 @import 'abstracts/variables';
-@import 'abstracts/functions';
 @import 'abstracts/mixins';
 
-@import 'base/reset';
-@import 'base/typography';
 @import 'base/global';
 
 @import 'layout/navigation';
-@import 'layout/forms';
 @import 'layout/footer';
 
 @import 'pages/attendance';
 @import 'pages/register';
 @import 'pages/login';
+
+// @import 'base/responsive';
 
 
 

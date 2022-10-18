@@ -123,5 +123,4 @@ $(document).ready(function () {
     }
     //End Login
     $('.attendanceList_local').before(`<img src="./assets/img/18-location-pin-flat.gif" alt="">`);
-
 });
