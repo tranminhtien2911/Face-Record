@@ -123,4 +123,14 @@ $(document).ready(function () {
     }
     //End Login
     $('.attendanceList_local').before(`<img src="./assets/img/18-location-pin-flat.gif" alt="">`);
+    $(function(){
+        $('.bck').backToTop({
+            iconName:'fas fa-chevron-up',
+            trigger : 300,
+            fxName :'fade',
+            fxTransitionDuration : 300,
+            scrollDuration : 300
+        });
+
+    });
 });
